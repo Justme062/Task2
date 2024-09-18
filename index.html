@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Horizon Forbidden West</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJotKPO7Y3gHB38fH3ezle0iM-jIbw9NvYSQ&s" alt="Логотип сайта" id="logo">
+        <h1> Horizon Forbidden West</h1>
+	<!-- Меню навигации -->
+
+	 <nav>
+            	<a href="#links">Ссылки</a>
+            	<a href="#table">Таблица</a>
+            	<a href="#form">Форма</a>
+    	</nav>
+    </header>
+
+    <!-- Маркированный список гиперссылок -->
+    <ul id="links"class="links">
+        <!-- Абсолютные ссылки -->
+        <li><a href="http://kubsu.ru">Ссылка на главную страницу сайта kubsu.ru (HTTP)</a></li>
+        <li><a href="https://kubsu.ru">Ссылка на главную страницу сайта kubsu.ru (HTTPS)</a></li>
+
+        <!-- Ссылка-изображение -->
+        <li><a href="https://example.com"><img id="picture" src="https://files.vgtimes.ru/gallery/main/169764/1643224370_318.jpeg" width="300" height="150" alt="Ссылка-изображение"></a></li>
+
+        <!-- Сокращенные ссылки -->
+        <li><a href="/ru/fktipm/kafedra-prikladnoy-matematiki">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+
+        <!-- Ссылка на фрагмент текущей страницы -->
+        <li><a href="#picture">Ссылка на фрагмент текущей страницы</a></li>
+        
+        <!-- Ссылка с тремя параметрами в URL -->
+        <li><a href="https://example.com/search?p1=c1&p2=c2&p3=c3">Ссылка с тремя параметрами</a></li>
+
+        <!-- Ссылка с параметром id в URL -->
+        <li><a href="https://example.com/about?id=1203">Ссылка с параметром id</a></li>
+
+        <!-- Относительные ссылки -->
+        <li><a href="./str.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="./about/str.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../str.html">Относительная ссылка на страницу уровнем выше</a></li>
+        <li><a href="../../str.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+
+        <!-- Контекстная ссылка в тексте абзаца -->
+        <li><p>Это <a href="https://ru.wikipedia.org/wiki/Horizon_Forbidden_West">контекстная ссылка</a> в тексте абзаца.</p></li>
+
+        <!-- Ссылка на фрагмент страницы стороннего сайта -->
+        <li><a href="https://www.kubsu.ru/ru/fktipm/prikladnaya-matematika-i-informatika-matematicheskie-i-informacionnye-tehnologii-v-cifrovoy#:~:text=1%2D%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80-,%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%20%D0%B8%20%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F,-396">Ссылка на фрагмент страницы стороннего сайта</a></li>
+
+        <!-- Ссылки из областей изображения -->
+        <li>
+            <img src="https://248006.selcdn.ru/main/upload/setka_images/19044224022021_1df76a4fc6c31c6a6711f160e73ca03dbe05d16e.jpg" usemap="#imagemap" width="300" height="150" alt="Карта изображения"> 
+            <map name="imagemap">
+                <area shape="rect" coords="40,30,135,135" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82" alt="Прямоугольная область">
+                <area shape="circle" coords="215,70,45" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3#:~:text=%D0%9A%D1%80%D1%83%D0%B3%20%E2%80%94%20%D1%87%D0%B0%D1%81%D1%82%D1%8C%20%D0%BF%D0%BB%D0%BE%D1%81%D0%BA%D0%BE%D1%81%D1%82%D0%B8%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D1%8F%20%D0%BB%D0%B5%D0%B6%D0%B8%D1%82,%D0%BD%D0%B5%20%D0%BF%D1%80%D0%B5%D0%B2%D1%8B%D1%88%D0%B0%D0%B5%D1%82%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BD%D0%B5%D0%BE%D1%82%D1%80%D0%B8%D1%86%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%87%D0%B8%D1%81%D0%BB%D0%B0&text=%D0%BD%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D1%80%D0%B0%D0%B4%D0%B8%D1%83%D1%81%D0%BE%D0%BC%20%D1%8D%D1%82%D0%BE%D0%B3%D0%BE%20%D0%BA%D1%80%D1%83%D0%B3%D0%B0.,%D1%82%D0%BE%20%D0%BA%D1%80%D1%83%D0%B3%20%D0%B2%D1%8B%D1%80%D0%BE%D0%B6%D0%B4%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%B2%20%D1%82%D0%BE%D1%87%D0%BA%D1%83." alt="Круглая область">
+            </map>
+        </li>
+
+        <!-- Ссылка с пустым href -->
+        <li><a href="">Ссылка с пустым href</a></li>
+
+        <!-- Ссылка без href -->
+        <li><a>Ссылка без href</a></li>
+
+        <!-- Ссылка, по которой запрещен переход поисковикам -->
+        <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+
+        <!-- Ссылка, запрещенная для индексации -->
+        <li>
+             <noindex><a href="https://example.com" >Ссылка, запрещенная для индексации</a></noindex>
+        </li>
+
+        <!-- Нумерованный список ссылок с подписями title -->
+        <li>
+            <ol>
+                <li><a href="https://example.com" title="Лучшая игра">Horizon</a></li>
+                <li><a href="https://example.com" title="Точно">Точно?</a></li>
+            </ol>
+        </li>
+
+        <!-- Ссылка на файл на сервере FTP с авторизацией -->
+        <li><a href="ftp://name:pass@ftp.kubsu.ru/algebra.txt">Ссылка на файл на сервере FTP</a></li>
+    </ul>
+
+	<!-- Таблица -->
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Добытчик</th>
+                    <th>Транспортировщик</th>
+                    <th>Разведчик</th>
+                    <th>Боевой класс</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Плуторог</td>
+                    <td>Бронекат</td>
+                    <td>Тучерез</td>
+                    <td>Огневолк</td>
+                </tr>
+                <tr>
+		    <td>Ленторог</td>
+                    <td colspan="3">Волногрыз</td>
+                </tr>
+                <tr>
+                    <td>Секач</td>
+                    <td>Скараб</td>
+                    <td>Долгоног</td>
+                    <td>Смертокрыл</td>
+                </tr>
+		<tr>
+                    <td>Клинорыл</td>
+                    <td>Водопрыск</td>
+                    <td>Норокоп</td>
+                    <td>Пилозуб</td>
+                </tr>
+		<tr>
+                    <td>Камнегрыз</td>
+                    <td>Кислотный бурдюк</td>
+                    <td>Рыскарь</td>
+                    <td>Громозев</td>
+                </tr>
+		<tr>
+                    <td>Гребнерог</td>
+                    <td>Бегемот</td>
+                    <td>Рыскарь-красноглаз</td>
+                    <td>Исполин</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- Форма с полями -->
+    <form id="form" action="form.php" method="post">
+        <label for="name">ФИО:</label>
+        <input type="text" name="name"><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" name="phone"><br>
+	<label for="email">E-mail:</label>
+        <input type="email" name="email"><br>
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" name="dob"><br>
+
+	<label>Пол:</label>
+	<label>
+
+        <input type="radio" name="gender" value="male">
+        <label for="male">Мужской</label>
+	</label>
+	<label>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Женский</label><br>
+	</label>
+        <label for="languages">Ваш любимый язык программирования:</label>
+	<label>
+        <select name="languages" multiple>
+            	<option value="pascal">Pascal</option>
+            	<option value="c">C</option>
+            	<option value="cpp">C++</option>
+            	<option value="javascript">JavaScript</option>
+            	<option value="php">PHP</option>
+            	<option value="python">Python</option>
+            	<option value="java">Java</option>
+		<option value="haskell">Haskell</option>
+            	<option value="clojure">Clojure</option>
+            	<option value="prolog">Prolog</option>
+            	<option value="scala">Scala</option>
+		<option value="horizon">Horizon 0_0</option>
+        </select><br>
+	</label>
+
+        <label for="bio">Биография:<br>
+        <textarea name="bio"></textarea><br>
+	</label>
+
+	<label>
+        <input type="checkbox" name="contract">
+        <label for="contract">С контрактом ознакомлен (а)</label><br>
+	</label>
+
+        <input type="submit" value="Сохранить">
+    </form>
+
+        
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>(c) Justme 2024 </p>
+    </footer>
+
+</body>
+</html>
