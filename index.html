@@ -22,7 +22,7 @@
     </header>
 
     <!-- Маркированный список гиперссылок -->
-    <ul id="links"class="links">
+    <ul id="links" class="links">
         <!-- Абсолютные ссылки -->
         <li><a href="http://kubsu.ru">Ссылка на главную страницу сайта kubsu.ru (HTTP)</a></li>
         <li><a href="https://kubsu.ru">Ссылка на главную страницу сайта kubsu.ru (HTTPS)</a></li>
@@ -75,7 +75,7 @@
 
         <!-- Ссылка, запрещенная для индексации -->
         <li>
-             <noindex><a href="https://example.com" >Ссылка, запрещенная для индексации</a></noindex>
+             <!--noindex--><a href="https://example.com" >Ссылка, запрещенная для индексации</a><!--/noindex-->
         </li>
 
         <!-- Нумерованный список ссылок с подписями title -->
@@ -141,29 +141,29 @@
     <!-- Форма с полями -->
     <form id="form" action="form.php" method="post">
         <label for="name">ФИО:</label>
-        <input type="text" name="name"><br>
+        <input id="name" type="text" name="name"><br>
 
         <label for="phone">Телефон:</label>
-        <input type="tel" name="phone"><br>
+        <input id="phone" type="tel" name="phone"><br>
 	<label for="email">E-mail:</label>
-        <input type="email" name="email"><br>
+        <input id="email" type="email" name="email"><br>
 
         <label for="dob">Дата рождения:</label>
-        <input type="date" name="dob"><br>
-
+        <input id="dob" type="date" name="dob"><br>
+	<div>
 	<label>Пол:</label>
 	<label>
-
+	Мужской
         <input type="radio" name="gender" value="male">
-        <label for="male">Мужской</label>
 	</label>
 	<label>
+	Женский
         <input type="radio" name="gender" value="female">
-        <label for="female">Женский</label><br>
 	</label>
+	</div>
         <label for="languages">Ваш любимый язык программирования:</label>
 	<label>
-        <select name="languages" multiple>
+        <select id="languages" name="languages" multiple>
             	<option value="pascal">Pascal</option>
             	<option value="c">C</option>
             	<option value="cpp">C++</option>
@@ -178,21 +178,18 @@
 		<option value="horizon">Horizon 0_0</option>
         </select><br>
 	</label>
+	<div>
+        <label for="bio">Биография:<br></label>
+        <textarea id="bio" name="bio"></textarea><br>
+	</div>
 
-        <label for="bio">Биография:<br>
-        <textarea name="bio"></textarea><br>
-	</label>
-
-	<label>
-        <input type="checkbox" name="contract">
+	<div>
+        <input id="contract" type="checkbox" name="contract">
         <label for="contract">С контрактом ознакомлен (а)</label><br>
-	</label>
+	</div>
 
-        <input type="submit" value="Сохранить">
+        <label><input type="submit" value="Сохранить"></label>
     </form>
-
-        
-    </main>
 
     <!-- Подвал -->
     <footer>
